@@ -79,7 +79,7 @@ void AMainCharacter::Tick(float DeltaTime)
 	FCollisionQueryParams Params;
 
 	GetWorld()->LineTraceSingleByChannel(ElementHit, InitialRaycastVector, EndRaycastVector, ECollisionChannel::ECC_MAX, Params);
-	DrawDebugLine(GetWorld(),InitialRaycastVector,EndRaycastVector, FColor::Red,false,0.0f);
+	//DrawDebugLine(GetWorld(),InitialRaycastVector,EndRaycastVector, FColor::Red,false,0.0f);
 
 	if (ElementHit.bBlockingHit) 
 	{
